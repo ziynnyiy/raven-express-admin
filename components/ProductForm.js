@@ -18,7 +18,7 @@ export default function ProductForm({
   const [description, setDescription] = useState(exsitingDescription || "");
   const [category, setCategory] = useState(assignedCategory || "");
   const [productProperties, setProductProperties] = useState(
-    assignedProperties || {},
+    assignedProperties || {}
   );
   const [price, setPrice] = useState(existingPrice || "");
   const [images, setImages] = useState(existingImages || []);
@@ -106,7 +106,7 @@ export default function ProductForm({
       <label>商品名稱</label>
       <input
         type="text"
-        placeholder="product name"
+        placeholder="輸入商品名稱"
         value={title}
         onChange={(Event) => setTitle(Event.target.value)}
       />
