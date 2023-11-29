@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <title>Raven Express</title>
+        <meta name="description" content="The only express that you need." />
         <link
           rel="icon"
           type="image/svg+xml"
