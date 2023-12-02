@@ -11,6 +11,9 @@
   "dependencies": {
     "@auth/mongodb-adapter": "^1.0.0",
     "@aws-sdk/client-s3": "^3.373.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.19",
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
     "eslint": "8.44.0",
