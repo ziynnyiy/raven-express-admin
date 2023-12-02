@@ -55,7 +55,7 @@ function SettingsPage({ swal }) {
       )}
       {!isLoading && (
         <>
-          <label>主推商品</label>
+          <label>首頁商品</label>
           <select
             value={featuredProductId}
             onChange={(ev) => {
