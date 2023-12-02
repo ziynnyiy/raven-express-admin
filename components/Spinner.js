@@ -1,12 +1,20 @@
-import { PulseLoader } from "react-spinners";
+import { Stack, CircularProgress } from "@mui/material";
 
 export default function Spinner({ fullWidth }) {
   if (fullWidth) {
     return (
       <div className="w-full flex justify-center">
-        <PulseLoader color={"#5542F6"} speedMultiplier={2} />
+        <Stack spacing={2} direction="row">
+          <CircularProgress color="secondary" />
+        </Stack>
       </div>
     );
   }
-  return <PulseLoader color={"#5542F6"} speedMultiplier={2} />;
+  return (
+    <div>
+      <Stack spacing={2} direction="row">
+        <CircularProgress color="secondary" />
+      </Stack>
+    </div>
+  );
 }
