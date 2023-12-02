@@ -22,7 +22,7 @@ export default function HomeStats() {
         sum +=
           parseInt(specificProduct.price_data.unit_amount) *
           parseInt(specificProduct.quantity);
-      }),
+      })
     );
     sum = sum / 100; // Because the unit of Stripe is cents.
     return new Intl.NumberFormat("zh-TW").format(sum);
@@ -37,13 +37,13 @@ export default function HomeStats() {
   }
 
   const ordersToday = orders.filter(
-    (o) => new Date(o.createdAt) > subHours(new Date(), 24),
+    (o) => new Date(o.createdAt) > subHours(new Date(), 24)
   );
   const ordersWeek = orders.filter(
-    (o) => new Date(o.createdAt) > subHours(new Date(), 24 * 7),
+    (o) => new Date(o.createdAt) > subHours(new Date(), 24 * 7)
   );
   const ordersMonth = orders.filter(
-    (o) => new Date(o.createdAt) > subHours(new Date(), 24 * 30),
+    (o) => new Date(o.createdAt) > subHours(new Date(), 24 * 30)
   );
 
   return (
